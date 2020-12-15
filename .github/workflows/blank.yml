@@ -34,5 +34,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          mkdir new-folder
           ls -a -l
           bash <(curl -s https://codecov.io/bash)
