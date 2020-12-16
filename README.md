@@ -1,4 +1,6 @@
-![Alt text](docs/img/wacc-logo-nbg.png?raw=true "Title")
+<p align="center">
+  <a href="https://github.com/pax1a/wacc"><img src="https://github.com/pax1a/wacc/blob/main/docs/img/wacc-logo-nbg.png" alt="wacc"></a>
+</p>
 <p align="center">
     <em>WACC - The Python micro framework for deriving cost of capital</em>
 </p>
