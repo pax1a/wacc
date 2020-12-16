@@ -33,5 +33,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo $GITHUB_RUN_NUMBER
+          pip install wacc==
           ls -a -l
           # bash <(curl -s https://codecov.io/bash)
