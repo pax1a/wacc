@@ -34,5 +34,5 @@ jobs:
         run: |
           echo $GITHUB_RUN_NUMBER
           pip3 install wacc
-          pip3 show wacc | grep Version
+          pip3 show wacc | grep Versionpip show wacc | grep Version | grep -Ro "[[:digit:]].[[:digit:]].[[:digit:]]"
           # bash <(curl -s https://codecov.io/bash)
