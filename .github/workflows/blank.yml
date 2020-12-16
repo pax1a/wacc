@@ -33,6 +33,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo $GITHUB_RUN_NUMBER
-          pip install wacc
-          pip show wacc | grep Version
+          pip3 install wacc
+          pip3 show wacc | grep Version
           # bash <(curl -s https://codecov.io/bash)
