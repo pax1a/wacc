@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="wacc", # Replace with your own username
+    name="wacc",
     version="0.0.1",
     author="pax1a",
     author_email="author@example.com",
@@ -17,6 +17,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
+        "Topic :: Office/Business :: Financial",
     ],
     python_requires='>=3.6',
 )
