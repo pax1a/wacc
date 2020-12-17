@@ -3,3 +3,6 @@ theme:
   name: material
 repo_name: pax1a/wacc
 repo_url: https://github.com/pax1a/wacc
+google_analytics:
+  - G-1ZFQ58L9C9
+  - auto
