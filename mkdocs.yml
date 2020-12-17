@@ -1,3 +1,5 @@
 site_name: wacc
 theme:
   name: material
+repo_name: pax1a/wacc
+repo_url: https://github.com/pax1a/wacc
