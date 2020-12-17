@@ -1,6 +1,8 @@
 site_name: wacc
 theme:
   name: material
+extra_css:
+  - stylesheets/custom.css
 repo_name: pax1a/wacc
 repo_url: https://github.com/pax1a/wacc
 google_analytics:
