@@ -2,6 +2,8 @@ site_name: wacc
 theme:
   name: material
   favicon: img/favicon.ico
+  icon:
+    repo: fontawesome/brands/github-alt
 extra_css:
   - stylesheets/custom.css
 repo_name: pax1a/wacc
