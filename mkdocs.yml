@@ -1,7 +1,7 @@
 site_name: wacc
 theme:
   name: material
-  favicon: img/favicon.png
+  favicon: img/favicon.ico
 extra_css:
   - stylesheets/custom.css
 repo_name: pax1a/wacc
