@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/pax1a/wacc"><img src="https://github.com/pax1a/wacc/blob/main/docs/img/wacc-logo-nbg.png" alt="wacc"></a>
+  <a href="https://github.com/pax1a/wacc"><img src="https://github.com/pax1a/wacc/blob/main/docs/img/wacc-logo-nbg-wd.png" alt="wacc"></a>
 </p>
 <p align="center">
     <em>{wacc} - The Python micro framework for deriving cost of capital</em>
