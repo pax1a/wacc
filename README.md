@@ -11,6 +11,9 @@
       <a href="https://codecov.io/gh/pax1a/wacc">
         <img src="https://codecov.io/gh/pax1a/wacc/branch/main/graph/badge.svg?token=6CVZ1XENIV"/>
       </a>
+      <a href="https://pypi.org/project/wacc" target="_blank">
+        <img src="https://img.shields.io/pypi/v/wacc?color=%2334D058&label=pypi%20package" alt="Package version">
+      </a>
 </p>
 
 # Introduction
