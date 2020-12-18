@@ -1,4 +1,13 @@
-  language: python
-  script:
-    - ls -l -a
-    - pytest
+language: python
+
+install:
+  - pip install coverage
+  
+script:
+  - ls -l -a
+  - pytest
+  - coverage run -m unittest discover
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+  
