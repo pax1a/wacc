@@ -1,3 +1,5 @@
   language: python
   script:
-    - ./wacc/pytest
+    - ls -l -a
+    - cd wacc
+    - pytest
