@@ -1,7 +1,7 @@
 site_name: Docs
 theme:
   name: material
-  custom_dir: overrides
+  custom_dir: docs/overrides
   favicon: img/favicon.ico
   logo: img/wacc-icon-white.svg
   icon:
