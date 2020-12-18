@@ -1,4 +1,4 @@
-site_name: wacc
+site_name: Docs
 theme:
   name: material
   favicon: img/favicon.ico
