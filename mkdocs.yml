@@ -1,9 +1,9 @@
 site_name: Docs
 theme:
   name: material
-  logo: img/wacc-logo-white.svg
   favicon: img/favicon.ico
   icon:
+    logo: img/wacc-logo-white.svg
     repo: fontawesome/brands/github-alt
 extra_css:
   - stylesheets/custom.css
