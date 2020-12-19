@@ -17,4 +17,5 @@ google_analytics:
   - auto
 nav:
   - Home: index.md
-  - Getting started: getting-started.md
+  - Getting started: 
+    - Installation: getting-started.md
