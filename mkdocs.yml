@@ -13,3 +13,5 @@ repo_url: https://github.com/pax1a/wacc
 google_analytics:
   - UA-158202007-1
   - auto
+nav:
+  - Home: index.md
