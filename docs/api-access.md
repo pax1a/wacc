@@ -9,6 +9,6 @@ Sign up here
 
 <script>
   function test() {
-    console.log("TEST")
+    console.log(g-recaptcha)
   }
 </script>
