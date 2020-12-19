@@ -19,3 +19,5 @@ nav:
   - Home: index.md
   - Getting started: 
     - Installation: getting-started.md
+  - API:
+    - API access: api-access.md
