@@ -4,6 +4,7 @@ Sign up here
 
 <script>
    function onSubmit(token) {
+     console.log("captcha");
      document.getElementById("demo-form").submit();
    }
  </script>
