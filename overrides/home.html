@@ -5,7 +5,6 @@
 {% block tabs %}
   {{ super() }}
   <style>
-    .md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}
     .tx-container {
       padding-top: px2rem(20px);
       background:
@@ -17,12 +16,13 @@
           var(--md-default-bg-color) 99%
         );
     }
-    @media screen and (min-width: 60em)
-    .tx-hero {
-      display: flex;
-      align-items: stretch;
-      margin: 0 .8rem;
-      color: var(--md-primary-bg-color);
+    @media screen and (min-width: 60em){
+      .tx-hero {
+        display: flex;
+        align-items: stretch;
+        margin: 0 .8rem;
+        color: var(--md-primary-bg-color);
+      }
     }
     
     @media screen and (min-width: 60em)
