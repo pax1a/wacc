@@ -5,8 +5,6 @@ install:
   
 script:
   - coverage run -m pytest
-  - ls -a -l
-  - cat .coverage
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
