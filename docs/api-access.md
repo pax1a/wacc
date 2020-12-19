@@ -1,5 +1,12 @@
 Sign up here
 
+
+
+<form name="demo-form" onsubmit="console.log("subi") method="post">
+  Name: <input type="text" name="fname">
+</form>
+
+
 <button class="g-recaptcha" data-sitekey="6LcQ_gwaAAAAAPF6WKL0azbGAWyxw69Ue286GM7g" data-callback='onSubmit' data-action='submit'>Submit</button>
 
 <script>
