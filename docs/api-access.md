@@ -9,6 +9,6 @@ Sign up here
 
 <script>
   function test() {
-    console.log(g-recaptcha)
+    console.log(grecaptcha.getResponse())
   }
 </script>
