@@ -18,4 +18,3 @@ google_analytics:
 nav:
   - Home: index.md
   - Getting started: getting-started.md
-  - Docs: docs.md
