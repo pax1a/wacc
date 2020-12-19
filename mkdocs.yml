@@ -17,4 +17,5 @@ google_analytics:
   - auto
 nav:
   - Home: index.md
-  - Docs: index.md
+  - Getting started: getting-started.md
+  - Docs: docs.md
