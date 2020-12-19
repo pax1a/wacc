@@ -6,6 +6,8 @@ theme:
   logo: img/wacc-icon-white.svg
   icon:
     repo: fontawesome/brands/github-alt
+  features:
+    - navigation.tabs
 extra_css:
   - stylesheets/custom.css
 repo_name: pax1a/wacc
@@ -15,3 +17,4 @@ google_analytics:
   - auto
 nav:
   - Home: index.md
+  - Docs: index.md
