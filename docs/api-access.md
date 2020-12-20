@@ -1,14 +1,14 @@
 Sign up here
 
 
-<form action="?" method="POST">
-  <div class="g-recaptcha" data-sitekey="6LcUBQ0aAAAAAEGdQXbsNZDzQd65tt0i3XG4jfPo" data-callback="test"></div>
-  <br/>
-  <input type="submit" value="Submit">
-</form>
+<div class="g-recaptcha" data-sitekey="6LeTWQ4aAAAAAL-8maK0CD5qlBJdmiO8jWFJPLh1" data-callback="test"></div>
+
+<button class="md-button md-button--primary">Get API key</button>
 
 <script>
+  let recaptcha=""
   function test() {
-    console.log(grecaptcha.getResponse())
+    recaptcha=grecaptcha.getResponse()
+    console.log(recaptcha)
   }
 </script>
