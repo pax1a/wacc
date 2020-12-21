@@ -1,3 +1,10 @@
+<style>
+.failure {
+	display: none;
+}
+</style>
+
+
 Sign up here
 
 
