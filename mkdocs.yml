@@ -1,4 +1,4 @@
-site_name: {wacc.io} \| Cost of capital for the cloud
+site_name: {wacc.io} Cost of capital for the cloud
 theme:
   name: material
   custom_dir: overrides
