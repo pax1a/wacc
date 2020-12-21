@@ -10,6 +10,8 @@ theme:
     - navigation.tabs
 extra_css:
   - stylesheets/custom.css
+extra_javascript:
+  - js/recaptcha.js
 repo_name: pax1a/wacc
 repo_url: https://github.com/pax1a/wacc
 google_analytics:
