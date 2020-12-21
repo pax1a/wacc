@@ -21,3 +21,7 @@ nav:
     - Installation: getting-started.md
   - API:
     - API access: api-access.md
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
