@@ -6,7 +6,7 @@ Sign up here
 <button class="md-button md-button--primary">Get API key</button>
 
 
-!!! check
+!!! success
     Have in mind that we cares about the part:
 
     ```
@@ -14,6 +14,9 @@ Sign up here
     ```
 
     Text goes here
+    
+!!! failure
+    It seems that you are already a registered user. Please contact support@wacc.io to retrieve your API key. Thank you!
 
 
 
