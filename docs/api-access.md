@@ -1,7 +1,11 @@
 <style>
-.failure {
+.success, .failure, .api-button {
 	display: none;
 }
+.show {
+	display: block;
+}
+
 </style>
 
 
@@ -10,8 +14,9 @@ Sign up here
 
 <div class="g-recaptcha" data-sitekey="6LeTWQ4aAAAAAL-8maK0CD5qlBJdmiO8jWFJPLh1" data-callback="test"></div>
 
-<button class="md-button md-button--primary">Get API key</button>
-
+<div class="api-button">
+	<a href="#" class="md-button md-button--primary">Get API key</a>
+</div>
 
 !!! success
     Have in mind that we cares about the part:
@@ -31,6 +36,8 @@ Sign up here
   let recaptcha=""
   function test() {
     recaptcha=grecaptcha.getResponse()
+document.getElementsByClassName("api-button")[0].classList.add("show")
+	document.getElementsByClassName("success")[0].classList.add("show")
   console.log(recaptcha)
   fetch('https://new.pax1a.usw1.kubesail.org/get', {
 	method: 'POST',
@@ -46,6 +53,7 @@ Sign up here
 		}
 		return Promise.reject(response);
 		}).then(function (data) {
+		document.getElementsByTagName("code")[0].innerHTML=data.api_key
 		console.log(data);
 		}).catch(function (error) {
 		console.warn('Something went wrong.', error);
