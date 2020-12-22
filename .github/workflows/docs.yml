@@ -13,5 +13,5 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material
       - run: ls -a -l
-      - run: sed -i 's/{{ API_ENDPOINT }}/${{ secrets.API_ENDPOINT }}/' ./docs/js/recaptcha.js
+      - run: sed -i 's|{{ API_ENDPOINT }}|${{ secrets.API_ENDPOINT }}|' ./docs/js/recaptcha.js
       - run: mkdocs gh-deploy --force
