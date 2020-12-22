@@ -4,7 +4,6 @@
   --md-primary-fg-color--dark:  #90030C;
 }
 
-
 ////
 /// Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
 ///
@@ -54,4 +53,8 @@
         var(--md-default-bg-color) 99%
       );
   }
+}
+
+.md-header-nav__button.md-logo img, .md-header-nav__button.md-logo svg {
+    width: 4.2rem;
 }
