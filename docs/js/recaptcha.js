@@ -8,7 +8,7 @@
   function execute() {
   	document.getElementById("api-form").classList.add("hide")
   	console.log(recaptcha)
-  	fetch('https://new.pax1a.usw1.kubesail.org/get', {
+  	fetch('{{ API_ENDPOINT }}/get', {
   		method: 'POST',
   		body: JSON.stringify({
   			captcha: recaptcha
