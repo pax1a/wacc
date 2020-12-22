@@ -3,7 +3,7 @@ theme:
   name: material
   custom_dir: overrides
   favicon: img/favicon.ico
-  logo: img/wacc-icon-white.svg
+  logo: img/wacc-icon-multi-lng.svg
   icon:
     repo: fontawesome/brands/github-alt
   features:
