@@ -58,3 +58,7 @@
 .md-header-nav__button.md-logo img, .md-header-nav__button.md-logo svg {
     width: 4.2rem;
 }
+
+.md-nav__title .md-nav__button.md-logo img, .md-nav__title .md-nav__button.md-logo svg {
+    width: 6.4rem;
+}
