@@ -1,8 +1,12 @@
   let recaptcha = ""
 
   function test() {
-  	document.getElementsByClassName("api-button")[0].classList.add("show")
-  	recaptcha = grecaptcha.getResponse()
+  	document.getElementsByClassName("agree")[0].classList.add("show");
+  	recaptcha = grecaptcha.getResponse();
+  }
+
+  function agreeTerms() {
+		document.getElementsByClassName("api-button")[0].classList.toggle("show");
   }
 
   function execute() {
@@ -22,8 +26,8 @@
   		}
   		return Promise.reject(response);
   	}).then(function (data) {
-		  document.getElementsByTagName("code")[0].innerHTML = data.api_key
-		  document.getElementsByClassName("success")[0].classList.add("show")
+  		document.getElementsByTagName("code")[0].innerHTML = data.api_key
+  		document.getElementsByClassName("success")[0].classList.add("show")
   	}).catch(function (error) {
   		console.warn('Something went wrong.', error);
   	});

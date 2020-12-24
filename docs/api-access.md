@@ -1,6 +1,7 @@
 <style>
 	.success,
 	.failure,
+	.agree,
 	.api-button {
 		display: none;
 	}
@@ -26,7 +27,7 @@
 		border: 1px solid #ced4da;
 		border-radius: .1rem;
 	}
-	.api-button {
+	.agree, .api-button {
 		margin-top: 20px;
 	}
 </style>
@@ -41,6 +42,9 @@
 	Please provide your email adress:
 	<input type="email" class="input-email" id="email" placeholder="name@example.com">
 	<div class="g-recaptcha" data-sitekey="6LeTWQ4aAAAAAL-8maK0CD5qlBJdmiO8jWFJPLh1" data-callback="test"></div>
+	<div class="agree">
+		<input type="checkbox" id="agree" onclick=agreeTerms() /> I have read and agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+	</div>
 	<div class="api-button">
 		<a href="#" class="md-button md-button--primary" onclick=execute()>Get API key</a>
 	</div>
