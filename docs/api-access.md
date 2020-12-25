@@ -2,7 +2,8 @@
 	.success,
 	.failure,
 	.agree,
-	.api-button {
+	.api-button,
+	.g-recaptcha {
 		display: none;
 	}
 
@@ -38,12 +39,14 @@
 
 
 
-<div id="api-form">
+<div class="api-form" id="api-form">
 	Please provide your email adress:
-	<input type="email" class="input-email" id="email" placeholder="name@example.com">
-	<div class="g-recaptcha" data-sitekey="6LeTWQ4aAAAAAL-8maK0CD5qlBJdmiO8jWFJPLh1" data-callback="test"></div>
+	<input type="email" class="input-email" id="email" placeholder="name@example.com" oninput=validate()>
+	<div class="g-recaptcha" id="g-recaptcha" data-sitekey="6LeTWQ4aAAAAAL-8maK0CD5qlBJdmiO8jWFJPLh1" data-callback="verified"></div>
 	<div class="agree">
-		<input type="checkbox" id="agree" onclick=agreeTerms() /> I have read and agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+		<input type="checkbox" id="news" /> Subscribe to our newsletter
+		<br/>
+		<input type="checkbox" id="agree" onclick=agreeTerms() /> I have read and agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> 
 	</div>
 	<div class="api-button">
 		<a href="#" class="md-button md-button--primary" onclick=execute()>Get API key</a>

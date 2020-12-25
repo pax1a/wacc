@@ -1,12 +1,12 @@
   let recaptcha = ""
 
-  function test() {
+  function verified() {
   	document.getElementsByClassName("agree")[0].classList.add("show");
   	recaptcha = grecaptcha.getResponse();
   }
 
   function agreeTerms() {
-		document.getElementsByClassName("api-button")[0].classList.toggle("show");
+  	document.getElementsByClassName("api-button")[0].classList.toggle("show");
   }
 
   function execute() {
@@ -15,7 +15,8 @@
   	fetch('{{ API_ENDPOINT }}/get', {
   		method: 'POST',
   		body: JSON.stringify({
-  			captcha: recaptcha
+  			captcha: recaptcha,
+  			email: document.getElementById("email").value
   		}),
   		headers: {
   			'Content-type': 'application/json; charset=UTF-8'
@@ -31,4 +32,17 @@
   	}).catch(function (error) {
   		console.warn('Something went wrong.', error);
   	});
+  }
+
+  function validate() {
+  	if (validateEmail(document.getElementById("email").value)) {
+  		document.getElementById("g-recaptcha").classList.add("show")
+  	} else {
+  		document.getElementById("g-recaptcha").classList.remove("show")
+  	}
+  }
+
+  function validateEmail(email) {
+  	var re = /\S+@\S+\.\S+/;
+  	return re.test(email);
   }

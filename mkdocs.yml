@@ -27,3 +27,4 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+copyright: Copyright &copy; 2020 - wacc.io | <a href="/terms-of-service">Terms of Service</a> | <a href="/data-privacy">Data Privacy</a>
