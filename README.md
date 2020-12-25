@@ -2,7 +2,7 @@
   <a href="https://github.com/pax1a/wacc"><img src="https://github.com/pax1a/wacc/blob/main/docs/img/wacc-logo-nbg-wd.png" alt="wacc"></a>
 </p>
 <p align="center">
-  <em><b>wacc</b> - The Python micro framework for deriving cost of capital</em>
+  <b>wacc</b> - <em>The Python micro framework for deriving cost of capital</em>
 </p>
 <p align="center">
       <a href="https://travis-ci.com/pax1a/wacc">
