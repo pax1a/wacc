@@ -1,5 +1,7 @@
   let recaptcha = ""
 
+  let failure="It seems that you are already a registered user. Please contact support@wacc.io to retrieve your API key. Thank you!"
+
   function verified() {
   	document.getElementsByClassName("agree")[0].classList.add("show");
   	recaptcha = grecaptcha.getResponse();
@@ -11,7 +13,6 @@
 
   function execute() {
   	document.getElementById("api-form").classList.add("hide")
-  	console.log(recaptcha)
   	fetch('{{ API_ENDPOINT }}/get', {
   		method: 'POST',
   		body: JSON.stringify({
@@ -30,9 +31,14 @@
   		document.getElementsByTagName("code")[0].innerHTML = data.api_key
   		document.getElementsByClassName("success")[0].classList.add("show")
   	}).catch(function (error) {
-  		console.warn('Something went wrong.', error);
+		  console.log(error.status)
+		  document.getElementsByClassName("failure")[0].classList.add("show")
+		  document.getElementsByClassName("failure")[0].innerHTML+="<p>"+failure+"</p>"
+		  document.getElementById("reset-button").classList.add("show")
+		  console.warn('Something went wrong.', error);
   	});
   }
+
 
   function validate() {
   	if (validateEmail(document.getElementById("email").value)) {
