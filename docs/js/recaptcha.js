@@ -13,7 +13,7 @@
 
   function execute() {
   	document.getElementById("api-form").classList.add("hide")
-  	fetch('{{ API_ENDPOINT }}/get', {
+  	fetch('{{ API_ENDPOINT }}/user/create', {
   		method: 'POST',
   		body: JSON.stringify({
   			captcha: recaptcha,
