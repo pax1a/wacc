@@ -16,8 +16,10 @@
   	fetch('{{ API_ENDPOINT }}/get', {
   		method: 'POST',
   		body: JSON.stringify({
-  			captcha: recaptcha,
-  			email: document.getElementById("email").value
+			  captcha: recaptcha,
+			  email: document.getElementById("email").value,
+			  agreedTos: document.getElementById("agree").checked,
+			  agreedNews: document.getElementById("news").checked
   		}),
   		headers: {
   			'Content-type': 'application/json; charset=UTF-8'
