@@ -3,6 +3,7 @@
 	.failure,
 	.agree,
 	.question,
+	.warning,
 	.api-button,
 	.reset-button,
 	.g-recaptcha {
@@ -69,7 +70,7 @@
 	Please store it somewhere safe because as soon as you navigate away from this page, we will not be able to retrieve or 
 	restore this generated token.
 
-!!! question
+!!! warning
 
 !!! failure
 

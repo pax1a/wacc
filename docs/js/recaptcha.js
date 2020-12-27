@@ -46,8 +46,8 @@
   				break;
   			case 409:
   				message = "It seems that you are already a registered user. Please contact support@wacc.io to retrieve your API key. Thank you!"
-  				document.getElementsByClassName("question")[0].innerHTML += "<p>" + message + "</p>";
-  				document.getElementsByClassName("question")[0].classList.add("show");
+  				document.getElementsByClassName("warning")[0].innerHTML += "<p>" + message + "</p>";
+  				document.getElementsByClassName("warning")[0].classList.add("show");
   				break;
   			default:
   				message = "Somethin went wrong, please try again or contact support@wacc.io. Thank you!"
