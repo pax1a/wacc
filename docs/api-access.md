@@ -9,6 +9,10 @@
 		display: none;
 	}
 
+	.api-form {
+		min-height: 150px;
+	}
+
 	.show {
 		display: block;
 	}
@@ -37,8 +41,7 @@
 </style>
 
 
-## Sign up here
-
+## Claim your API Key
 
 
 
@@ -73,3 +76,7 @@
 <div class="reset-button" id="reset-button">
 	<a href="/api-access" class="md-button">Reset</a>
 </div>
+
+## Support
+
+[Support and Q&A goes here]

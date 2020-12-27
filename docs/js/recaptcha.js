@@ -1,6 +1,6 @@
-  let recaptcha = ""
+  let recaptcha = "";
 
-  let failure="It seems that you are already a registered user. Please contact support@wacc.io to retrieve your API key. Thank you!"
+  let message = "";
 
   function verified() {
   	document.getElementsByClassName("agree")[0].classList.add("show");
@@ -16,10 +16,10 @@
   	fetch('{{ API_ENDPOINT }}/user/create', {
   		method: 'POST',
   		body: JSON.stringify({
-			  captcha: recaptcha,
-			  email: document.getElementById("email").value,
-			  agreedTos: document.getElementById("agree").checked,
-			  agreedNews: document.getElementById("news").checked
+  			captcha: recaptcha,
+  			email: document.getElementById("email").value,
+  			agreedTos: document.getElementById("agree").checked,
+  			agreedNews: document.getElementById("news").checked
   		}),
   		headers: {
   			'Content-type': 'application/json; charset=UTF-8'
@@ -33,11 +33,29 @@
   		document.getElementsByTagName("code")[0].innerHTML = data.api_key
   		document.getElementsByClassName("success")[0].classList.add("show")
   	}).catch(function (error) {
-		  console.log(error.status)
-		  document.getElementsByClassName("failure")[0].classList.add("show")
-		  document.getElementsByClassName("failure")[0].innerHTML+="<p>"+failure+"</p>"
-		  document.getElementById("reset-button").classList.add("show")
-		  console.warn('Something went wrong.', error);
+  		switch (error.status) {
+  			case 401:
+  				message = "Captcha expired, please try again.";
+  				document.getElementsByClassName("failure")[0].innerHTML += "<p>" + message + "</p>";
+  				document.getElementsByClassName("failure")[0].classList.add("show");
+  				break;
+  			case 406:
+  				message = "Email address not valid, please try again.";
+  				document.getElementsByClassName("failure")[0].innerHTML += "<p>" + message + "</p>";
+  				document.getElementsByClassName("failure")[0].classList.add("show");
+  				break;
+  			case 409:
+  				message = "It seems that you are already a registered user. Please contact support@wacc.io to retrieve your API key. Thank you!"
+  				document.getElementsByClassName("question")[0].innerHTML += "<p>" + message + "</p>";
+  				document.getElementsByClassName("question")[0].classList.add("show");
+  				break;
+  			default:
+  				message = "Somethin went wrong, please try again or contact support@wacc.io. Thank you!"
+  				document.getElementsByClassName("failure")[0].innerHTML += "<p>" + message + "</p>";
+  				document.getElementsByClassName("failure")[0].classList.add("show");
+  		}
+  		document.getElementById("reset-button").classList.add("show")
+  		console.warn('Something went wrong.', error);
   	});
   }
 
