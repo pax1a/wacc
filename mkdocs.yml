@@ -24,6 +24,7 @@ nav:
     - Installation: getting-started.md
   - API:
     - API access: api-access.md
+  - Go to App: https://app.wacc.io
 markdown_extensions:
   - admonition
   - pymdownx.details
