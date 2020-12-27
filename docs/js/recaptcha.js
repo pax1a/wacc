@@ -13,6 +13,7 @@ function agreeTerms() {
 
 function execute() {
 	document.getElementById("api-form").classList.add("hide")
+	document.getElementById("loader").style.display = "block";
 	fetch('{{ API_ENDPOINT }}/user/create', {
 		method: 'POST',
 		body: JSON.stringify({
@@ -25,6 +26,7 @@ function execute() {
 			'Content-type': 'application/json; charset=UTF-8'
 		}
 	}).then(function (response) {
+		document.getElementById("loader").style.display = "none";
 		if (response.ok) {
 			return response.json();
 		}
