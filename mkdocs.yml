@@ -19,6 +19,7 @@ google_analytics:
   - auto
 nav:
   - Home: index.md
+  - Methodology: methodology.md
   - Getting started: 
     - Installation: getting-started.md
   - API:
