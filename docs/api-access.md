@@ -10,8 +10,8 @@
 		display: none;
 	}
 
-	.api-form {
-		min-height: 150px;
+	.claim-divider {
+		min-height: 50px;
 	}
 
 	.show {
@@ -77,6 +77,8 @@
 <div class="reset-button" id="reset-button">
 	<a href="/api-access" class="md-button">Reset</a>
 </div>
+
+<div class="claim-divider"></div>
 
 ## Support
 
